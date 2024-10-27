@@ -1,6 +1,5 @@
 import * as React from "react";
-import { Image } from "expo-image";
-import { StyleSheet, View, Text } from "react-native";
+import { Image, StyleSheet, View, Text } from "react-native";
 import { Color, FontFamily, FontSize, Border } from "../GlobalStyles";
 
 const Login = () => {
@@ -8,12 +7,12 @@ const Login = () => {
     <View style={styles.login}>
       <Image
         style={styles.loginChild}
-        contentFit="cover"
+        resizeMode="cover"
         source={require("../assets/ellipse-48.png")}
       />
       <Image
         style={styles.loginItem}
-        contentFit="cover"
+        resizeMode="cover"
         source={require("../assets/ellipse-47.png")}
       />
       <View style={[styles.loginInner, styles.loginLayout]} />
@@ -40,22 +39,22 @@ const Login = () => {
       </Text>
       <Image
         style={styles.googleLogoIcon}
-        contentFit="cover"
+        resizeMode="cover"
         source={require("../assets/google-logo.png")}
       />
       <Image
         style={[styles.groupIcon, styles.iconLayout]}
-        contentFit="cover"
+        resizeMode="cover"
         source={require("../assets/group.png")}
       />
       <Image
         style={[styles.vectorIcon, styles.vectorIconLayout]}
-        contentFit="cover"
+        resizeMode="cover"
         source={require("../assets/vector-2.png")}
       />
       <Image
         style={[styles.loginChild4, styles.vectorIconLayout]}
-        contentFit="cover"
+        resizeMode="cover"
         source={require("../assets/vector-2.png")}
       />
       <Text style={[styles.orSignUp, styles.loginFlexBox]}>
@@ -69,25 +68,25 @@ const Login = () => {
       </Text>
       <Image
         style={[styles.vectorIcon1, styles.iconLayout]}
-        contentFit="cover"
+        resizeMode="cover"
         source={require("../assets/vector.png")}
       />
       <Image
         style={styles.indiaInIcon}
-        contentFit="cover"
+        resizeMode="cover"
         source={require("../assets/india-in.png")}
       />
       <View style={[styles.rectangle37Copy14Parent, styles.rectangle37Layout]}>
         <View style={[styles.rectangle37Copy14, styles.rectangle37Layout]} />
         <Image
           style={styles.caretdownIcon}
-          contentFit="cover"
+          resizeMode="cover"
           source={require("../assets/caretdown.png")}
         />
       </View>
       <Image
         style={styles.userIcon}
-        contentFit="cover"
+        resizeMode="cover"
         source={require("../assets/user.png")}
       />
       <View style={styles.inculcate}>
@@ -356,7 +355,7 @@ const styles = StyleSheet.create({
     color: Color.colorGoldenrod,
   },
   culcate: {
-    color: "#1e242a",
+    color: Color.colorGray_100,
   },
   inculcate1: {
     top: "0%",
